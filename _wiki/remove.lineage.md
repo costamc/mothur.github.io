@@ -52,7 +52,7 @@ those sequences that belong to the taxonomy and whose confidence scores
 is above the scores you give.
 
     mothur > classify.seqs(fasta=abrecovery.fasta, template=silva.nogap.fasta, taxonomy=silva.bacteria.silva.tax)
-    mothur > get.lineage(taxonomy=abrecovery.silva.taxonomy, taxon=Bacteria(100);Firmicutes(90);)
+    mothur > remove.lineage(taxonomy=abrecovery.silva.taxonomy, taxon=Bacteria(100);Firmicutes(90);)
 
 This generates abrecovery.silva.pick.taxonomy a file containing the 240
 sequences, removing sequences from Bacteria;Firmicutes whose confidence
